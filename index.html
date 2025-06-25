@@ -5,7 +5,11 @@
         <title>HTTPS to SMS</title>
     </head>
     <body>
-        Usage: https://dckreative.github.io/sms-tools/index.html?tel=1234567890&body=This%20is%20a%20test%20message.
+        <h2>HTTPS to SMS</h2>
+        <br />
+        Usage:<br />
+        <br />
+        https://dckreative.github.io/sms-tools/index.html?tel=1234567890&body=This%20is%20a%20test%20message
         <script>
             const urlSearchParams = new URLSearchParams(window.location.search);
             const params = Object.fromEntries(urlSearchParams.entries());
@@ -25,7 +29,7 @@
 
             if (tel != "" && tel != null) 
             {
-                window.location = "sms://+" + tel + ";?&body=" + body;
+                window.location = "sms://" + tel + ";?&body=" + body;
             }
         </script>
     </body>
